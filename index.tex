@@ -1,0 +1,86 @@
+\documentclass[a4paper,margin=1in]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{lipsum}
+\usepackage{pgf-pie}
+\graphicspath{ {Assets/} }
+\definecolor{AVgray}{gray}{0.75}
+\fancypagestyle{AVHeader}{%
+  \renewcommand{\headrulewidth}{2pt}
+  \renewcommand{\headrule}{\hbox to\headwidth{%
+    \color{red}\leaders\hrule height \headrulewidth\hfill}}
+  \renewcommand{\footrule}{\hbox to\headwidth{%
+    \color{AVgray}\leaders\hrule height \headrulewidth\hfill}}
+}
+\setlength{\headheight}{38pt}%
+\pagestyle{AVHeader}
+\usepackage{hyperref}
+
+
+\renewcommand*\contentsname{Sumary}
+\renewcommand{\listtablename}{List of Tables}
+\renewcommand{\listfigurename}{List of Figures}
+
+\begin{document}
+\lhead{\includegraphics[height=1.5cm]{logo.png}}
+
+
+\rhead{CUSTOMER NAME\\DOCUMENT CODE}
+\cfoot{TYPE OF REPORT}
+
+\tableofcontents
+\pagebreak
+
+
+\section{FIRST SECTION}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum risus vitae enim finibus facilisis. Mauris vestibulum mi ipsum, nec auctor quam condimentum in. Etiam egestas luctus nibh vitae accumsan. Pellentesque congue orci in libero egestas, sit amet eleifend nisl fringilla. Vestibulum malesuada est dui, ac iaculis neque dapibus id. Ut sed posuere elit. Sed fermentum justo volutpat quam rutrum commodo.\\
+
+In pretium augue sem, non sollicitudin nibh tristique eu. Aenean faucibus faucibus velit, sit amet iaculis leo rhoncus ut. Integer at elit ac purus elementum tempus ut et turpis. Vestibulum purus leo, iaculis quis vestibulum in, molestie vitae arcu. Nulla iaculis purus eget lectus fermentum ultrices. Donec ultricies auctor malesuada. Nulla facilisi. Curabitur posuere scelerisque elit at sagittis. Etiam non elit aliquam, varius arcu in, lacinia nisl. Donec lacinia tincidunt erat, eu maximus ipsum imperdiet gravida. Curabitur vel mi lacinia, dapibus justo mattis, luctus nisi.\\
+
+\section{SECOND SECTION}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum risus vitae enim finibus facilisis. Mauris vestibulum mi ipsum, nec auctor quam condimentum in. Etiam egestas luctus nibh vitae accumsan. Pellentesque congue orci in libero egestas\footnote{In pretium augue sem, non sollicitudin nibh tristique eu.}, sit amet eleifend nisl fringilla. Vestibulum malesuada est dui, ac iaculis neque dapibus id. Ut sed posuere elit. Sed fermentum justo volutpat quam rutrum commodo.\\
+\begin{itemize}
+  \item In pretium augue sem, non sollicitudin nibh tristique eu.
+  \item Aenean faucibus faucibus velit, sit amet iaculis leo rhoncus ut.
+  \item Integer at elit ac purus elementum tempus ut et turpis.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight,keepaspectratio]{sample_graph.png}
+    \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+    \label{fig:sat}
+\end{figure}
+
+
+\section{THIRD SECTION}
+\subsection{First Subsection}
+
+Fusce pretium purus justo, sed congue ante vulputate placerat. Donec volutpat dolor a justo cursus maximus. Pellentesque varius lobortis est, nec ultricies ligula malesuada non. Suspendisse in dui bibendum, consectetur leo in, luctus dui. Morbi porttitor a mauris at pellentesque. Proin vulputate nisl ipsum, a condimentum ligula euismod in. Vivamus ut libero massa. Phasellus a metus fringilla, auctor metus sed, auctor velit.\\
+
+
+\subsection{Second Subsection}
+
+Praesent sed augue nunc. Proin quis nisl bibendum, congue mauris nec, condimentum orci. Aenean non lobortis ante, at sodales ipsum. Mauris condimentum semper tellus. Nam eget orci viverra, consectetur massa sit amet, pulvinar est. In malesuada blandit velit vel egestas. Nunc vel nunc eget nisl laoreet fermentum ut nec urna. Ut tempus ex sed turpis condimentum, non venenatis leo posuere. Maecenas ultrices tortor vel diam euismod, ut venenatis orci porta. Mauris tempor augue nulla, id ullamcorper leo vehicula ac.\\
+
+
+\subsection{Third Subsection}
+
+Duis consectetur magna venenatis mi scelerisque, vitae auctor nunc fringilla. Nulla efficitur odio ac est semper euismod. Integer vitae neque justo. Curabitur tellus sem, porta in odio et, posuere egestas orci. Nullam ac enim euismod, accumsan nibh in, vestibulum ipsum. Mauris a suscipit magna. Cras at tortor nec mi posuere mollis et id sapien. Curabitur vel consectetur mauris. Integer faucibus quis risus sit amet ullamcorper. Nunc quis mollis neque. Pellentesque consectetur justo nec massa aliquet, eget condimentum quam tempus. Etiam fringilla fermentum sagittis. Quisque rhoncus, mauris sed dapibus eleifend, nisi nunc tincidunt orci, nec consectetur augue magna et urna. Vivamus porta accumsan tellus id dapibus. Curabitur sed lacus non quam blandit dictum.\\
+
+\vspace*{\vfill}
+
+\hspace*{5cm}\phantom{Aprovado: }SIGNATURE: \hrulefill
+
+\hspace*{7cm}\phantom{Aprovado: }{Aproved: }\today
+
+\hspace*{7cm}\phantom{Aprovado: }YOUR NAME HERE.
+
+\hspace*{7cm}\phantom{Aprovado: }YOUR ROLE, YOUR COMPANY
+
+
+\end{document}
